@@ -1,0 +1,68 @@
+.main {
+  padding: 20px 0 20px 0;
+}
+
+.main-page {
+  margin: auto;
+  /* background-color: red; */
+  max-width: 210mm;
+  border: 1px solid black;
+  padding: 1rem 0 1rem 0;
+  background-color: white;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.aling {
+  width: 15%;
+  /* background-color: green; */
+}
+
+.center-table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+thead tr th {
+  font-weight: 600;
+}
+
+#title-doc {
+  width: 100%;
+}
+
+#title-doc td,
+.centermid {
+  text-align: center;
+  vertical-align: middle;
+}
+
+#title-doc td p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#biodata-doc,
+#main-doc {
+  width: 91%;
+  border-collapse: collapse;
+}
+
+#biodata-doc tr td,
+#biodata-doc tr th,
+#main-doc tr th,
+#main-doc tr td {
+  border: 1px solid black;
+}
+
+#biodata-doc td,
+#main-doc td {
+  padding: 0.5em;
+}
+
+#card-detail-santri {
+  max-height: 85vh;
+}
