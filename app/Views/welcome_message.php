@@ -1,7 +1,13 @@
 <?= $this->extend('layout/main'); ?>
 
 <?= $this->section('main-content'); ?>
-<div class="row justify-content-center">
+<style>
+    .wawancara {
+        height: 80vh;
+        align-content: center;
+    }
+</style>
+<div class="row justify-content-center wawancara">
     <div class="col-md-4">
         <div class="card text-center" style="width: 100%;">
             <img src="<?= base_url(); ?>peserta.png" class="card-img-top" alt="...">
