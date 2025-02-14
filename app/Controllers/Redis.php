@@ -17,7 +17,12 @@ class Redis extends BaseController
     public function __construct()
     {
         $this->dataModel = new DataSantriModel();
-        $this->redis = new Client();
+        $this->redis = new Client(array(
+            'scheme'   => 'tcp',
+            'host'     => '127.0.0.1',
+            'port'     => 6379,
+            'database' => 15
+        ));
     }
 
     public function index()
@@ -37,7 +42,6 @@ class Redis extends BaseController
             // get total wali and add to redis
             $totalWali = count($dataWali);
             $this->redis->set('Total Wali', $totalWali);
-
 
             // Add data santri to Hash redis using json
             for ($i = 0; $i < $totalSantri; $i++) {
@@ -86,6 +90,8 @@ class Redis extends BaseController
         try {
             $this->redis->del('santri');
             $this->redis->del('Total Santri');
+            $this->redis->del('wali');
+            $this->redis->del('Total Wali');
 
             echo 'Data di redis berhasil dihapus';
         } catch (Exception $e) {

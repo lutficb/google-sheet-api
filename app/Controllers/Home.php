@@ -20,7 +20,12 @@ class Home extends BaseController
     function __construct()
     {
         $this->dataSantriModel = new DataSantriModel();
-        $this->redis = new Client();
+        $this->redis = new Client(array(
+            'scheme'   => 'tcp',
+            'host'     => '127.0.0.1',
+            'port'     => 6379,
+            'database' => 15
+        ));
     }
 
     public function index(): string
@@ -73,7 +78,7 @@ class Home extends BaseController
             // Get data santri from Redis
             $totalSantri = $this->redis->get('Total Santri');
 
-            $datSantri = [];
+            $dataSantri = [];
             for ($n = 0; $n < $totalSantri; $n++) {
                 $user = $this->redis->hget('santri', $n + 1);
                 $json = json_decode($user);
