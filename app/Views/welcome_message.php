@@ -6,6 +6,16 @@
         height: 80vh;
         align-content: center;
     }
+
+    @media screen and (max-width: 600px) {
+        .wawancara {
+            height: 100%;
+        }
+
+        .col-md-4 {
+            margin-bottom: 20px;
+        }
+    }
 </style>
 <div class="row justify-content-center wawancara">
     <div class="col-md-4">
