@@ -19,7 +19,7 @@ class Redis extends BaseController
         $this->dataModel = new DataSantriModel();
         $this->redis = new Client(array(
             'scheme'   => 'tcp',
-            'host'     => '127.0.0.1',
+            'host'     => 'localhost',
             'port'     => 6379,
             'database' => 15
         ));

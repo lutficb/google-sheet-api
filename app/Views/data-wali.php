@@ -28,7 +28,7 @@
                             <td class="text-center"><?= $data[$n]['NISN']; ?></td>
                             <td class="text-center"><?= $data[$n]['Jenjang Daftar']; ?></td>
                             <td><?= $data[$n]['Nama Ayah']; ?>/ <?= $data[$n]['Nama Ibu']; ?></td>
-                            <td><?= $data[$n]['Status yang mengisi formulir ini dan yang diwawancarai adalah ? (Yang mengisi wajib hadir di lokasi test, Pondok Pesantren Imam Syafi\'i Tulungagung, saat hari pelaksanaan, Ahad, 10 November 2024.']; ?></td>
+                            <td><?= $data[$n]['Status yang mengisi formulir ini dan yang diwawancarai adalah ?']; ?></td>
                             <td>
                                 <a href="<?= base_url('detail-wali/' . $data[$n]['NISN']); ?>" title="Lihat detail" class="btn btn-primary btn-sm"><i data-feather="user-check" stroke-width="2" height="18"></i></a>
                                 <a href="<?= base_url('cetak-wali/' . $data[$n]['NISN']); ?>" title="Unduh file PDF" class="btn btn-warning btn-sm"><i data-feather="download" stroke-width="2" height="18"></i></a>

@@ -47,7 +47,7 @@
                         </tr>
                         <tr>
                             <td>Yang Mengisi</td>
-                            <td><?= $biodata['Status yang mengisi formulir ini dan yang diwawancarai adalah ? (Yang mengisi wajib hadir di lokasi test, Pondok Pesantren Imam Syafi\'i Tulungagung, saat hari pelaksanaan, Ahad, 10 November 2024.']; ?></td>
+                            <td><?= $biodata['Status yang mengisi formulir ini dan yang diwawancarai adalah ?']; ?></td>
                         </tr>
                         <tr>
                             <td>Status yang Mengisi</td>

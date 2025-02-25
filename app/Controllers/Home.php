@@ -22,7 +22,7 @@ class Home extends BaseController
         $this->dataSantriModel = new DataSantriModel();
         $this->redis = new Client(array(
             'scheme'   => 'tcp',
-            'host'     => '127.0.0.1',
+            'host'     => 'localhost',
             'port'     => 6379,
             'database' => 15
         ));
@@ -112,6 +112,8 @@ class Home extends BaseController
                 $jsonw = json_decode($this->redis->hget('wali', $i + 1));
                 $dataWali[$i] = (array)$jsonw;
             }
+
+            // dd($dataWali);
 
             // Count length of array data santri
             $arraylength = count($dataWali);
