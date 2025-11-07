@@ -39,13 +39,13 @@ class Home extends BaseController
     public function checklist()
     {
         // Get data from google sheet
-        $peserta = $this->dataSantriModel->fetchDataFromGoogleSheet('1SDi15YgmbSxj2mreg3OYIPm9YJepUnPbtAesWsE0Q9M', 'Sheet1');
+        $peserta = $this->dataSantriModel->fetchDataFromGoogleSheet('1SDi15YgmbSxj2mreg3OYIPm9YJepUnPbtAesWsE0Q9M', '2026/2027');
 
         // Get data wawancara santri
-        $dataSantri = $this->dataSantriModel->fetchDataFromGoogleSheet('1boWrAxm6N9I91ZpPShnjm8KopWTSsWwjN-okUZzIVbk', 'Form Responses 1');
+        $dataSantri = $this->dataSantriModel->fetchDataFromGoogleSheet('1boWrAxm6N9I91ZpPShnjm8KopWTSsWwjN-okUZzIVbk', '2026/2027');
 
         // Get data wawancara wali
-        $dataWali = $this->dataSantriModel->fetchDataFromGoogleSheet('16LXFhZRbaFbGSxtyRotHY_AUSNMXdXYCe_zcXfxGp-U', 'Form Responses 1');
+        $dataWali = $this->dataSantriModel->fetchDataFromGoogleSheet('16LXFhZRbaFbGSxtyRotHY_AUSNMXdXYCe_zcXfxGp-U', '2026/2027');
 
         // Count length of array
         $pesertaLenght = count($peserta);

@@ -30,10 +30,10 @@ class Redis extends BaseController
         // Try store data from google sheet to redis dcache
         try {
             // get data from google sheet and save to redis
-            $dataSantri = $this->dataModel->fetchDataFromGoogleSheet('1boWrAxm6N9I91ZpPShnjm8KopWTSsWwjN-okUZzIVbk', '2025/2026');
+            $dataSantri = $this->dataModel->fetchDataFromGoogleSheet('1boWrAxm6N9I91ZpPShnjm8KopWTSsWwjN-okUZzIVbk', '2026/2027');
 
             // Get data santri from Google Sheet
-            $dataWali = $this->dataModel->fetchDataFromGoogleSheet('16LXFhZRbaFbGSxtyRotHY_AUSNMXdXYCe_zcXfxGp-U', '2025/2026');
+            $dataWali = $this->dataModel->fetchDataFromGoogleSheet('16LXFhZRbaFbGSxtyRotHY_AUSNMXdXYCe_zcXfxGp-U', '2026/2027');
 
             // get total santri and add to redis
             $totalSantri = count($dataSantri);

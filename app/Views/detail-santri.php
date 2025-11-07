@@ -64,7 +64,19 @@
                         </tr>
                     </thead>
                     <tbody>
-                        zzz
+                        <?php $i = 1; ?>
+                        <?php foreach ($jawaban as $soal => $jawab): ?>
+                            <tr>
+                                <td style="font-weight: bold;"><?= $soal; ?></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <small>Jawaban : </small>
+                                    <p><?= $jawab; ?></p>
+                                </td>
+                            </tr>
+                            <?php $i++; ?>
+                        <?php endforeach; ?>
                     </tbody>
                     <tfoot>
                         <tr>
