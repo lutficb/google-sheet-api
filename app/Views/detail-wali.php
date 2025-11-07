@@ -14,7 +14,7 @@
         </div>
         <div class="row mt-3 justify-content-center">
             <div class="col-md-7">
-                <h6 class="text-center fw-bold">PENDAFTARAN SANTRI BARU T.A. 2025/2026</h6>
+                <h6 class="text-center fw-bold">PENDAFTARAN SANTRI BARU T.A. 2026/2027</h6>
                 <h6 class="text-center fw-bold">SOAL TEST WAWANCARA WALI CALON SANTRI</h6>
             </div>
         </div>

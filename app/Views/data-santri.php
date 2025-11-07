@@ -37,7 +37,7 @@
                         <?php $i++; ?>
                     <?php endfor; ?>
                 </tbody>
-            </table>
+            </table>z
         </div>
     </div>
 </div>
