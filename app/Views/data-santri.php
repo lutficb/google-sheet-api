@@ -31,7 +31,7 @@
                             <td><?= $data[$n]['Nama Ibu']; ?></td>
                             <td>
                                 <a href="<?= base_url('detail-santri/' . $data[$n]['NISN']); ?>" title="Lihat detail" class="btn btn-primary btn-sm"><i data-feather="user-check" stroke-width="2" height="18"></i></a>
-                                <a href="<?= base_url('cetak-santri/' . $data[$n]['NISN']); ?>" title="Unduh file PDF" class="btn btn-warning btn-sm"><i data-feather="download" stroke-width="2" height="18"></i></a>
+                                <!-- <a href="<?= base_url('cetak-santri/' . $data[$n]['NISN']); ?>" title="Unduh file PDF" class="btn btn-warning btn-sm"><i data-feather="download" stroke-width="2" height="18"></i></a> -->
                             </td>
                         </tr>
                         <?php $i++; ?>
